@@ -12,8 +12,20 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Dosis', ...defaultTheme.fontFamily.sans],
+                'abereto': ['Aboreto', 'cursive'],
+                'dancing-script': ['Dancing Script', 'cursive'],
             },
+            backgroundImage: {
+                'hero-home': "url('/assets/forest.jpg')",
+                'hero-accommodation': 'url("/assets/forest2.jpg")',
+                'hero-info': "url('/assets/deer.jpg')",
+                'hero-prices': "url('/assets/mushroom.jpg')",
+                'hero-contact': "url('/assets/trees.jpg')",
+                'home-collage': "url('/assets/home_collage.png')",
+                'home-map': "url('/assets/map.png')",
+                'gradient-home': 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%), url("/assets/map.png");'
+            }
         },
     },
 
