@@ -31,7 +31,7 @@ const Prices = () => {
                 <section className="flex flex-col justify-center items-center mt-5 mb-5 px-5">
                     <div className="w-2/3">
                         <h3 className="text-xl font-bold">Prijzen</h3>
-                        <p className="text-sm mb-5">De prijzen zijn inclusief : water, elektriciteit, bedlinnen en eindschoonmaak</p>
+                        <p className="text-sm mb-5">De prijzen zijn inclusief : water, elektriciteit en eindschoonmaak</p>
                         <div className="flex flex-col justify-center items-center w-full">
                             <h4 className="font-bold">Laagseizoen</h4>
                             <div className="w-full flex justify-between items-center border-b-2 border-[#5C5C5C] pt-3 pb-3">

@@ -31,7 +31,7 @@ const Accommodation = () => {
                 <section className="flex flex-col justify-center items-center mt-5 mb-5 px-5">
                     <div className="w-4/5 lg:w-2/3">
                         <h3 className="text-xl font-bold mb-5" >Slaap- en Badkamers</h3>
-                        <p className="mb-5">Er zijn drie comfortabele slaapkamers en twee badkamers. Alle bedden zijn voorzien van verse bedlinnen om u te laten genieten van een goede nachtrust en u te laten ontwaken met het rustgevende geluid van de natuur om u heen.</p>
+                        <p className="mb-5">In het huis zijn drie comfortabele slaapkamers en twee badkamers beschikbaar. U kunt genieten van een goede nachtrust en ontwaken met het rustgevende geluid van de natuur om u heen.</p>
                         <Carousel pictures={images.filter(i => i.tag === "bed_bath")} />
                     </div>
                 </section>

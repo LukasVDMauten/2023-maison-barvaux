@@ -39,7 +39,7 @@ const Info = () => {
                                 <li className="flex justify-start items-center pb-1"><div className="bg-[#89A87B] w-3 h-3 rounded-full  mr-2"></div>Omheinde Tuin</li>
                             </ul>
                         </div>
-                        <p className="flex justify-start items-center pb-1"><div className="bg-[#89A87B] w-3 h-3 rounded-full  mr-2"></div>Prijzen inclusief : water, elektriciteit, bedlinnen en eindschoonmaak</p>
+                        <p className="flex justify-start items-center pb-1"><div className="bg-[#89A87B] w-3 h-3 rounded-full  mr-2"></div>Prijzen inclusief : water, elektriciteit en eindschoonmaak</p>
                     </div>
                 </section>
                 {/*<section className="flex flex-col justify-center items-center mt-5 mb-5">*/}
