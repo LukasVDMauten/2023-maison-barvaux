@@ -6,7 +6,7 @@ const navigation = [
     { name: 'HOME', href: '/' },
     { name: 'ACCOMODATIE', href: '/accommodation' },
     { name: 'INFO', href: '/info' },
-    { name: 'PRIJZEN', href: '/prices' },
+    { name: 'BESCHIKBAARHEID & PRIJZEN', href: '/prices' },
     { name: 'CONTACT', href: '/contact' },
 ]
 
@@ -16,10 +16,10 @@ const Header = ({currentTab}) => {
     return(
         <header className="bg-white w-full">
             <nav className="mx-auto flex w-full items-center justify-around lg:justify-between lg:px-8" aria-label="Global">
-                <div className="w-1/3 lg:flex justify-start items-center lg:p-10 hidden">
+                <div className="w-2/5 2xl:flex justify-start items-center lg:p-10 hidden">
                     {/*<p className="text-[#5C5C5C] font-abereto text-xl">NL</p>*/}
                 </div>
-                <div className="lg:w-1/3 w-full flex flex-col justify-center items-center p-10">
+                <div className="lg:w-1/5 w-full flex flex-col justify-center items-center px-3 py-10">
                     <a href="/" className="text-center">
                         <h1 className="text-[#5C5C5C] text-5xl font-[400] font-abereto">MAISON</h1>
                         <h1 className="text-[#4C5D44] text-2xl font-[600] font-dancing-script">Barvaux</h1>
@@ -28,16 +28,17 @@ const Header = ({currentTab}) => {
                 <div className="absolute right-0 pr-2 lg:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                        className="-m-2.5 inline-flex items-center flex-col justify-center rounded-md p-2.5 text-gray-700 mr-3"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
                         <img className="w-8 object-contain" src="/assets/menu%20(2).png" alt=""/>
+                        <span className="text-sm">Menu</span>
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:justify-between w-1/3">
+                <div className="hidden lg:flex lg:justify-between lg:items-center 2xl:w-2/5 lg:w-3/5">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className={`mr-4 text-center text-lg ${currentTab === item.name ? "font-extrabold" : "hover:font-extrabold"} hover:cursor-pointer`}>
+                        <a key={item.name} href={item.href} className={`mr-4 text-center text-lg w-1/5 text-center ${currentTab === item.name ? "font-extrabold" : "hover:font-extrabold"} hover:cursor-pointer`}>
                             {item.name}
                         </a>
                     ))}

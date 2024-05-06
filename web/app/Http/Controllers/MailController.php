@@ -10,7 +10,7 @@ use Inertia\Inertia;
 class MailController extends Controller
 {
     public function SendMail(Request $request) {
-        $validateData = $request->validate([
+        $request->validate([
             'firstname' => 'required',
             'lastname' => 'required',
             'phone' => 'required',
@@ -19,7 +19,7 @@ class MailController extends Controller
             'message' => 'required'
         ]);
 
-        Mail::to("info@maisonbarvaux.be")->send(new RentRequest($validateData));
+        Mail::to("info@maisonbarvaux.be")->send(new RentRequest($request->all()));
 
         return redirect('/success');
     }

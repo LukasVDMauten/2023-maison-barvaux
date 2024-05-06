@@ -50,12 +50,52 @@ const Calendar = () => {
 
             start.setDate(start.getDate() - 1)
 
-            if (date >= start && date <= end) {
+            if (date >= start && date < end) {
                 inEvent = true;
             }
         });
 
         return inEvent;
+    }
+
+    function isLastDay (date) {
+        let isLastDay = false;
+        events.forEach(e => {
+            const end = new Date(e.end_date);
+
+            if (date === end) {
+                isLastDay = true;
+            }
+        });
+
+        return isLastDay;
+    }
+
+    function eventBackground (date) {
+        let backgroundStyle = "";
+        events.forEach(event => {
+            date.setHours(0,0,0);
+            const start = new Date(event.start_date);
+            start.setHours(0,0,0);
+            const end = new Date(event.end_date);
+            end.setHours(0,0,0);
+            const tomorrow = new Date(event.end_date);
+            tomorrow.setHours(0,0,0);
+            tomorrow.setDate(tomorrow.getDate() + 1)
+
+            if (date >= start && date < end) {
+                backgroundStyle = "text-white bg-red-500";
+            } else if (isSameDay(date, end)) {
+                const et = events.filter(e => isSameDay(new Date(e.start_date), tomorrow))
+
+                if (et.length > 0)
+                    backgroundStyle = "text-white bg-red-500";
+                else
+                    backgroundStyle = "text-white bg-half-taken bg-center";
+            }
+        });
+
+        return backgroundStyle;
     }
 
     return (
@@ -104,7 +144,7 @@ const Calendar = () => {
                                     )} >
                                     {}
                                     <p className={classNames(
-                                            isInEvent(day) && 'text-white bg-red-500',
+                                            eventBackground(day),
                                             isToday(day) && 'text-white bg-[#89A87B]',
                                             'mx-auto flex h-8 w-8 items-center justify-center rounded-full'
                                         )} >

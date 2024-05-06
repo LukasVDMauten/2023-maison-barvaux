@@ -24,6 +24,7 @@ module.exports = {
                 'hero-contact': "url('/assets/trees.jpg')",
                 'home-collage': "url('/assets/home_collage.png')",
                 'home-map': "url('/assets/map.png')",
+                'half-taken': "url('/assets/calendar-half-taken.png')",
                 'gradient-home': 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%), url("/assets/map.png");'
             }
         },

@@ -18,15 +18,16 @@ const Footer = () => {
                 </div>
                 <div className="w-1/4 m-5">
                     <ul>
-                        <li className="pt-2"><a href="/">Home</a></li>
-                        <li className="pt-2"><a href="/accommodatie">Accommodatie</a></li>
-                        <li className="pt-2"><a href="/info">Info</a></li>
-                        <li className="pt-2"><a href="/contact">Contact</a></li>
+                        <li className="pt-1"><a href="/">Home</a></li>
+                        <li className="pt-1"><a href="/accommodation">Accommodatie</a></li>
+                        <li className="pt-1"><a href="/info">Info</a></li>
+                        <li className="pt-1"><a href="/prices">Beschikbaarheid & prijzen</a></li>
+                        <li className="pt-1"><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
                 <div className="w-1/12 m-5">
                     <ul>
-                        <li><Link target="_blank" href="https://www.facebook.com/profile.php?id=100090961963299" ><img className="w-8 mt-2" src="/assets/facebook.png" alt="link to Facebook page"/></Link></li>
+                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090961963299" ><img className="w-8 mt-2" src="/assets/facebook.png" alt="link to Facebook page"/></a></li>
                         <li><Link href="/contact" ><img className="w-8 mt-2" src="/assets/mail.png" alt="link to Contact page"/></Link></li>
                     </ul>
                 </div>

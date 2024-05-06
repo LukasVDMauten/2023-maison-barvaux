@@ -96,7 +96,8 @@ const Prices = () => {
                         <div className="text-center">
                             <p>Per verhuur wordt er een waarborg gevraagd van <b>€150</b>.</p>
                             <p>Gelieve bij het vastleggen van de reservering meteen de de waarborg te betalen.</p>
-                            <p>Een week op voorhand wordt het volledige bedrag van de reservering betaald.</p>
+                            <p>Twee weken voor verblijf word het huur bedrag gestort.</p>
+                            <p>Als de boeking en verblijf binnen de twee weken is word de borg en huur samen betaald .</p>
                             <p className="mt-3">Betalen kan op:</p>
                             <div className="mt-5 mb-5">
                                 <p>Rekeningsnummer: <b>BE41 0018 4054 6910</b></p>

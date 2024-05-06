@@ -39,7 +39,8 @@ class EventResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('label'),
                 Tables\Columns\TextColumn::make('start_date')
-                    ->date(),
+                    ->date()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('end_date')
                     ->date(),
                 Tables\Columns\TextColumn::make('created_at')
@@ -57,14 +58,14 @@ class EventResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -72,5 +73,5 @@ class EventResource extends Resource
             'create' => Pages\CreateEvent::route('/create'),
             'edit' => Pages\EditEvent::route('/{record}/edit'),
         ];
-    }    
+    }
 }
