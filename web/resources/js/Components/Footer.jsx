@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p className="pt-7 pb-7 font-semibold ">Designed & developed by <Link href="https://www.inect.be/">Inect</Link></p>
+            <p className="pt-7 pb-7 font-semibold text-sm"><Link target="_blank" className="flex justify-center items-center gap-1.5" href="https://www.arcadecreation.be/"><span>Designed & developed by</span><img className="h-3 object-contain" alt="Arcade Creation Logo" src="/assets/arcade-creation_logo.png" /></Link></p>
         </>
     )
 }
